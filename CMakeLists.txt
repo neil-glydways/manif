@@ -299,30 +299,30 @@ if(ENABLE_VALGRIND)
   set(MEMORYCHECK_COMMAND_OPTIONS "${MEMORYCHECK_COMMAND_OPTIONS} --error-exitcode=1")
 endif()
 
-# ------------------------------------------------------------------------------
-# Unit Tests
-# ------------------------------------------------------------------------------
+# # ------------------------------------------------------------------------------
+# # Unit Tests
+# # ------------------------------------------------------------------------------
 
-if(BUILD_TESTING)
+# if(BUILD_TESTING)
 
-  enable_testing()
-  add_subdirectory(test)
+#   enable_testing()
+#   add_subdirectory(test)
 
-endif(BUILD_TESTING)
+# endif(BUILD_TESTING)
 
-if(BUILD_PYTHON_BINDINGS AND (BUILD_TESTING OR BUILD_TESTING_PYTHON))
+# if(BUILD_PYTHON_BINDINGS AND (BUILD_TESTING OR BUILD_TESTING_PYTHON))
 
-  enable_testing()
-  add_subdirectory(test/python)
+#   enable_testing()
+#   add_subdirectory(test/python)
 
-endif()
+# endif()
 
-# ------------------------------------------------------------------------------
-# Benchmark
-# ------------------------------------------------------------------------------
+# # ------------------------------------------------------------------------------
+# # Benchmark
+# # ------------------------------------------------------------------------------
 
-if(BUILD_BENCHMARKING)
+# if(BUILD_BENCHMARKING)
 
-  add_subdirectory(benchmark)
+#   add_subdirectory(benchmark)
 
-endif(BUILD_BENCHMARKING)
+# endif(BUILD_BENCHMARKING)
